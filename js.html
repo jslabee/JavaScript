@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>javascripttecaj</title>
+    <script type="text/javascript">
+    function spremeninaslov(){
+    var zamenjajnaslov = document.getElementById("input").value;
+    if(zamenjajnaslov.lenght == 0){
+      alert("vnesti morate nov naslov");
+      return;
+    }
+    var mojnaslov = document.getElementById('h1')
+    mojnaslov.innerHTML = zamenjajnaslov;
+    }
+
+    </script>
+
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+    <h1 id = "h1">javascript</h1>
+<input type="text" id="input" >
+<input type="button" onclick="spremeninaslov()" value="spremeni naslov">
+
+  </body>
+</html>
